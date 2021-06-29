@@ -1,0 +1,1212 @@
+[10-Dec-2019 15:09:34 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1368', '1230')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[10-Dec-2019 15:09:35 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1369', '1230')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[10-Dec-2019 15:09:48 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1363', '1229')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[10-Dec-2019 15:09:49 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1364', '1229')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[10-Dec-2019 15:09:49 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1366', '1229')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[10-Dec-2019 15:09:58 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '822', '1050')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[10-Dec-2019 15:09:58 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '825', '1050')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[12-Dec-2019 10:46:16 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1440', '1277')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[12-Dec-2019 10:46:18 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1441', '1277')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[30-Jan-2020 10:56:38 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1802', '1415')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[30-Jan-2020 10:57:36 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1405', '1261')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[30-Jan-2020 10:57:36 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1406', '1261')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[30-Jan-2020 10:57:37 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1408', '1261')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[30-Jan-2020 10:57:38 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1445', '1282')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[30-Jan-2020 10:57:39 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1446', '1282')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[30-Jan-2020 10:57:40 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1448', '1282')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[30-Jan-2020 10:57:40 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1525', '1301')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[30-Jan-2020 10:57:41 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1526', '1301')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[30-Jan-2020 10:57:41 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1528', '1301')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[30-Jan-2020 10:57:44 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1803', '1415')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[20-Mar-2020 10:36:44 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1832', '1425')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[10-Apr-2020 10:57:07 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2250', '1628')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[10-Apr-2020 10:57:08 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2253', '1628')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[10-Apr-2020 14:08:44 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1833', '1425')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[10-Apr-2020 14:52:48 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2264', '1635')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[10-Apr-2020 15:09:25 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2265', '1635')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[10-Apr-2020 16:54:40 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2274', '1638')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[10-Apr-2020 17:34:28 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2279', '1639')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[11-Apr-2020 08:25:47 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2275', '1638')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[11-Apr-2020 09:21:09 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2251', '1628')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 00:33:17 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2289', '1649')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 00:51:49 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2284', '1648')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 09:46:28 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2290', '1649')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 10:23:09 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2285', '1648')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 11:46:24 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2299', '1651')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 13:59:54 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2300', '1651')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:45:11 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2266', '1635')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:45:13 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2252', '1628')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:45:16 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1355', '1227')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:45:16 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1043', '1129')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:45:18 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1014', '1119')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:45:19 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '999', '1112')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:45:22 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2286', '1648')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:45:58 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1015', '1119')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:46:01 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1044', '1129')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:46:17 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '974', '1107')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:46:22 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '929', '1086')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:46:26 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '844', '1056')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:46:28 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1048', '1131')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:46:29 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1068', '1139')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:46:30 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1028', '1045')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:46:32 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1009', '1116')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:46:33 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '924', '1081')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:46:35 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1370', '1230')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:46:36 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1407', '1261')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:46:38 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1447', '1282')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:46:39 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1527', '1301')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:46:40 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '884', '1068')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:46:41 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1365', '1229')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:46:42 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1442', '1277')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:46:47 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2276', '1638')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:47:00 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '845', '1056')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:47:01 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '885', '1068')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:47:02 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1443', '1277')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:57:20 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '723', '1006')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:57:21 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '724', '1006')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:57:23 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1291', '1211')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:57:26 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1016', '1122')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:57:27 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1371', '1230')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 16:57:44 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2304', '1653')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[13-Apr-2020 17:19:34 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2305', '1653')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[14-Apr-2020 08:43:39 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2306', '1653')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[14-Apr-2020 11:19:16 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2279', '1639')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[14-Apr-2020 11:34:45 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2309', '1654')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[14-Apr-2020 11:53:54 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2310', '1654')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[14-Apr-2020 12:00:34 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2280', '1639')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[14-Apr-2020 12:00:39 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2280', '1639')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[15-Apr-2020 08:18:38 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2287', '1648')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[15-Apr-2020 08:28:39 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2329', '1659')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[15-Apr-2020 08:35:49 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2314', '1655')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[15-Apr-2020 09:16:29 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2330', '1659')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[15-Apr-2020 14:50:59 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2291', '1649')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[15-Apr-2020 14:51:02 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2301', '1651')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[15-Apr-2020 14:51:14 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2331', '1659')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[15-Apr-2020 14:51:23 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '725', '1006')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[15-Apr-2020 14:51:30 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2307', '1653')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[15-Apr-2020 14:51:34 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2311', '1654')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[15-Apr-2020 14:51:36 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2281', '1639')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[15-Apr-2020 14:51:43 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2292', '1649')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[15-Apr-2020 14:52:05 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2319', '1656')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[15-Apr-2020 14:52:10 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2277', '1638')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[15-Apr-2020 16:34:29 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2302', '1651')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[15-Apr-2020 16:34:44 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2282', '1639')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[16-Apr-2020 16:18:40 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2315', '1655')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[18-Apr-2020 17:58:12 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2339', '1668')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[18-Apr-2020 17:58:15 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2379', '1683')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[20-Apr-2020 16:09:51 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2340', '1668')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[20-Apr-2020 16:09:53 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2380', '1683')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[23-Apr-2020 16:38:26 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2439', '1707')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[24-Apr-2020 08:12:31 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '2440', '1707')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38
+[11-May-2020 10:20:22 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE timeline SET finish=1, created=? WHERE TID=? in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php:38
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php(53): updateSingle(Object(PDO), '1834', '1425')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mytask/mytask.php on line 38

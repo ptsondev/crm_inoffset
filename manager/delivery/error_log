@@ -1,0 +1,48 @@
+[19-May-2021 14:54:31 Asia/Ho_Chi_Minh] UPDATE projects SET status=? WHERE PID=?
+[19-May-2021 14:54:31 Asia/Ho_Chi_Minh] UPDATE projects SET status=? WHERE PID=?
+[19-May-2021 14:54:34 Asia/Ho_Chi_Minh] UPDATE projects SET status=? WHERE PID=?
+[19-May-2021 15:16:18 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE projects SET phone=?, delivery_address=?, delivery_note=? WHERE PID=? in /home/innhanhf/crm.inoffsethcm.com/manager/delivery/delivery.php:28
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/delivery/delivery.php(46): updateSingle(Object(PDO), Object(stdClass))
+#1 /home/innhanhf/crm.inoffsethcm.com/manager/delivery/delivery.php(75): updateList(Array)
+#2 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/delivery/delivery.php on line 28
+[19-May-2021 15:16:20 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE projects SET phone=?, delivery_address=?, delivery_note=? WHERE PID=? in /home/innhanhf/crm.inoffsethcm.com/manager/delivery/delivery.php:28
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/delivery/delivery.php(46): updateSingle(Object(PDO), Object(stdClass))
+#1 /home/innhanhf/crm.inoffsethcm.com/manager/delivery/delivery.php(75): updateList(Array)
+#2 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/delivery/delivery.php on line 28
+[19-May-2021 15:16:24 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Exception: Array
+(
+    [0] => 00000
+    [1] => 
+    [2] => 
+)
+
+UPDATE projects SET phone=?, delivery_address=?, delivery_note=? WHERE PID=? in /home/innhanhf/crm.inoffsethcm.com/manager/delivery/delivery.php:28
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/delivery/delivery.php(46): updateSingle(Object(PDO), Object(stdClass))
+#1 /home/innhanhf/crm.inoffsethcm.com/manager/delivery/delivery.php(75): updateList(Array)
+#2 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/delivery/delivery.php on line 28
+[19-May-2021 16:54:29 Asia/Ho_Chi_Minh] UPDATE projects SET status=? WHERE PID=?
+[19-May-2021 16:54:30 Asia/Ho_Chi_Minh] UPDATE projects SET status=? WHERE PID=?
+[19-May-2021 16:54:30 Asia/Ho_Chi_Minh] UPDATE projects SET status=? WHERE PID=?
+[19-May-2021 16:54:31 Asia/Ho_Chi_Minh] UPDATE projects SET status=? WHERE PID=?
+[19-May-2021 16:54:32 Asia/Ho_Chi_Minh] UPDATE projects SET status=? WHERE PID=?
+[19-May-2021 16:54:34 Asia/Ho_Chi_Minh] UPDATE projects SET status=? WHERE PID=?
