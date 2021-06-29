@@ -636,3 +636,24 @@ tr:has(+ td.pending){
     width:120px;
     display: inline-block;;
 }
+img.picture{
+    height: 200px;
+    width: auto;
+}
+#project_pictures .pic{
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+#project_pictures .rm_pic{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    cursor: pointer;
+    padding: 10px;
+    background: red;
+    color: #fff;
+    font-weight: bold;
+}

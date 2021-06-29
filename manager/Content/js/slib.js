@@ -268,4 +268,25 @@ jQuery(document).ready(function($){
 
         });
 
+    // remove picture
+    $('#project_pictures .rm_pic').click(function(){
+        var picture_id = $(this).attr('picture_id');
+
+
+             $.ajax({url: '/manager/admin/ajax.php',
+
+                            async: false,
+
+                            dataType: "JSON",
+
+                            data:{  action:'removePicture', picture_id:picture_id},
+
+                            success: function (response) {                                
+                                  
+                            }
+
+            });
+          $('#project_pictures .pic-'+picture_id).remove();     
+    });
+
 });

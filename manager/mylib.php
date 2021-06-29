@@ -339,8 +339,26 @@ function updateLoiLo($PID){
 }
 
 
+function loadProjectPictures($PID){
+    $dbh = getDBH();
+    $sql = "SELECT * FROM pictures WHERE PID=?";
+    $stmt = $dbh->prepare($sql);
+    $stmt->execute(array($PID));
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);  
+
+    $arrPics = array();
+    if(is_array($result)){
+        foreach ($result as $item) {
+            $arrPics[$item['picture_id']]=$item['url'];
+        }
+    }
+    return $arrPics;
+}
+
 function sher_debug($var){
     $file = dirname(__FILE__).'\debug.txt';
     file_put_contents($file, print_r($var, true), FILE_APPEND);
     die;
 }
+
+

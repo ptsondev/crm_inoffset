@@ -145,4 +145,9 @@ if(isset($_REQUEST['action']) && $_REQUEST['action']=='updateTimeLine' ){
     $stmt->execute(array($TCID));
 
     echo "1";
+}else if(isset($_REQUEST['action']) && $_REQUEST['action']=='removePicture' ){
+     $picture_id = intval($_REQUEST['picture_id']);
+    $sql = "DELETE FROM pictures WHERE picture_id=?";
+    $stmt = $dbh->prepare($sql);
+    $stmt->execute(array($picture_id));
 }

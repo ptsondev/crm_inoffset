@@ -4,9 +4,10 @@
 
 
 define('DB_HOSTNAME','localhost'); // database host name
-define('DB_USERNAME', 'innhanhf_root');     // database user name
-define('DB_PASSWORD', 'mysqlHaoilaHa'); // database password
-define('DB_NAME', 'innhanhf_crm'); // database name 
+define('DB_USERNAME', 'root');     // database user name
+define('DB_PASSWORD', ''); // database password
+define('DB_NAME', 'crm'); // database name 
+
 
 
 
