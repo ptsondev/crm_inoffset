@@ -1,0 +1,118 @@
+[02-Mar-2020 15:04:33 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php:97
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/tinhgia/tutinh.php(12): tinhGiaGiay(500, 'C300', '65x86')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php on line 97
+[02-Mar-2020 15:04:34 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php:97
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/tinhgia/tutinh.php(12): tinhGiaGiay(500, 'C300', '65x86')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php on line 97
+[02-Mar-2020 15:04:35 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php:97
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/tinhgia/tutinh.php(12): tinhGiaGiay(500, 'C300', '65x86')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php on line 97
+[02-Mar-2020 15:04:35 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php:97
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/tinhgia/tutinh.php(12): tinhGiaGiay(500, 'C300', '65x86')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php on line 97
+[02-Mar-2020 15:04:36 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php:97
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/tinhgia/tutinh.php(12): tinhGiaGiay(500, 'C300', '65x86')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php on line 97
+[02-Mar-2020 15:04:36 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php:97
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/tinhgia/tutinh.php(12): tinhGiaGiay(500, 'C300', '65x86')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php on line 97
+[02-Mar-2020 15:04:36 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php:97
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/tinhgia/tutinh.php(12): tinhGiaGiay(500, 'C300', '65x86')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php on line 97
+[02-Mar-2020 15:04:37 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php:97
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/tinhgia/tutinh.php(12): tinhGiaGiay(500, 'C300', '65x86')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php on line 97
+[02-Mar-2020 15:04:37 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php:97
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/tinhgia/tutinh.php(12): tinhGiaGiay(500, 'C300', '65x86')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php on line 97
+[02-Mar-2020 15:04:55 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php:97
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/tinhgia/tutinh.php(12): tinhGiaGiay(500, 'C300', '65x86')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php on line 97
+[02-Mar-2020 15:04:56 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php:97
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/tinhgia/tutinh.php(12): tinhGiaGiay(500, 'C300', '65x86')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php on line 97
+[02-Mar-2020 15:04:56 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php:97
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/tinhgia/tutinh.php(12): tinhGiaGiay(500, 'C300', '65x86')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php on line 97
+[02-Mar-2020 15:05:22 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php:97
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/tinhgia/tutinh.php(12): tinhGiaGiay(500, 'C300', '65x86')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php on line 97
+[02-Mar-2020 15:05:25 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php:97
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/tinhgia/tutinh.php(12): tinhGiaGiay(500, 'C300', '65x86')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php on line 97
+[02-Mar-2020 15:06:39 Asia/Ho_Chi_Minh] Array
+(
+    [0] => Array
+        (
+            [VID] => 14
+            [cat] => Giay
+            [name] => C300_65x86
+            [value] => 1682000
+        )
+
+)
+
+[02-Mar-2020 15:06:40 Asia/Ho_Chi_Minh] Array
+(
+    [0] => Array
+        (
+            [VID] => 14
+            [cat] => Giay
+            [name] => C300_65x86
+            [value] => 1682000
+        )
+
+)
+
+[02-Mar-2020 15:06:41 Asia/Ho_Chi_Minh] Array
+(
+    [0] => Array
+        (
+            [VID] => 14
+            [cat] => Giay
+            [name] => C300_65x86
+            [value] => 1682000
+        )
+
+)
+
+[02-Mar-2020 15:06:41 Asia/Ho_Chi_Minh] Array
+(
+    [0] => Array
+        (
+            [VID] => 14
+            [cat] => Giay
+            [name] => C300_65x86
+            [value] => 1682000
+        )
+
+)
+
