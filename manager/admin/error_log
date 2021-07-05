@@ -32,3 +32,13 @@ Stack trace:
 #1 /home/innhanhf/crm.inoffsethcm.com/manager/admin/sProjects_all.php(283): updateList(Array)
 #2 {main}
   thrown in /home/innhanhf/crm.inoffsethcm.com/manager/admin/sProjects_all.php on line 81
+[03-Jul-2021 22:28:27 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php:366
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/admin/sale_mobile.php(71): displayStatusBySTTID('1')
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php on line 366
+[03-Jul-2021 22:29:17 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php:366
+Stack trace:
+#0 /home/innhanhf/crm.inoffsethcm.com/manager/admin/sale_mobile.php(71): displayStatusBySTTID(2)
+#1 {main}
+  thrown in /home/innhanhf/crm.inoffsethcm.com/manager/mylib.php on line 366

@@ -41,7 +41,7 @@ if(isset($_REQUEST['upload'])){
     if(!empty($fileNames)){ 
         foreach($_FILES['files']['name'] as $key=>$val){ 
             // File upload path 
-            $fileName = basename($_FILES['files']['name'][$key]); 
+            $fileName = time().'---'.basename($_FILES['files']['name'][$key]);
             $targetFilePath = $targetDir . $fileName; 
              
             // Check whether file type is valid 

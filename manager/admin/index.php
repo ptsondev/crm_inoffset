@@ -247,7 +247,7 @@
                 labelIndx: "text",
 
                       options: arrStatus, 
-
+                     
                 listeners: ['change']
 
             },
@@ -543,7 +543,7 @@
 
             width:'98%',
 
-            height:'98%',
+            height:'95%',
 
             showBottom: false,
 
@@ -559,7 +559,7 @@
 
             selectionModel: { type: 'cell' },
 
-            pageModel: { type: "local", rPP: 350, strRpp: "{0}", strDisplay: "{0} to {1} of {2}" },
+            pageModel: { type: "local", rPP: 150, strRpp: "{0}", strDisplay: "{0} to {1} of {2}" },
 
             numberCell: { show: false },
 

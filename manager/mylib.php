@@ -361,4 +361,20 @@ function sher_debug($var){
     die;
 }
 
+function displayStatusBySTTID($sttID){
+    $arrStt = array();
+$arrStt[0]='Đã Huỷ';
+$arrStt[1]='Mới';
+$arrStt[2]='Đã Báo Giá';
+$arrStt[3]='Đã Ký';
+$arrStt[4]='Đã làm xong';
+$arrStt[5]='Đã Giao - Chưa Thu Tiền';
+$arrStt[6]='Đã Hoàn Thành';
+$arrStt[10]='Đã Xử Lý File';
+$arrStt[11]='Đã In';
+$arrStt[8]='Đã Giao & Thu Tiền Rồi';
+$arrStt[7]='Duyệt In';
 
+    //$arrStt = json_decode(ARR_STT);
+    return $arrStt[$sttID];
+}

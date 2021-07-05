@@ -38,6 +38,8 @@ function show_header_include($title='Quản Lý Đơn Đặt In'){?>
 
 <link rel="stylesheet" href="../Content/css/pqgrid.min.css" >
 
+<link rel="stylesheet" href="../../pqgrid.min.css" >
+
         <link rel="stylesheet" href="../Content/css/pqselect.min.css" >    
 
     
