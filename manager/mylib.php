@@ -361,6 +361,7 @@ function sher_debug($var){
     die;
 }
 
+
 function displayStatusBySTTID($sttID){
     $arrStt = array();
 $arrStt[0]='Đã Huỷ';

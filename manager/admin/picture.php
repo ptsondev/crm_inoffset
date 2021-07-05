@@ -8,6 +8,7 @@
     $targetDir = dirname(__FILE__) ."/../../uploads/"; 
 ?>
 
+
 <script>
 
 	var PID = $('#pid_picture', window.parent.document).attr('pid'); 	
@@ -27,7 +28,14 @@
 
 <?php 
 
+
 $PID =  $_COOKIE["pid_picture"];
+/*
+if(isset($_REQUEST['PID'])){
+    $PId = $_REQUEST['PID'];
+}
+*/
+
 $dbh = getDBH();
 
 
@@ -41,7 +49,11 @@ if(isset($_REQUEST['upload'])){
     if(!empty($fileNames)){ 
         foreach($_FILES['files']['name'] as $key=>$val){ 
             // File upload path 
+
             $fileName = time().'---'.basename($_FILES['files']['name'][$key]);
+
+            $fileName = basename($_FILES['files']['name'][$key]); 
+
             $targetFilePath = $targetDir . $fileName; 
              
             // Check whether file type is valid 
@@ -85,6 +97,7 @@ if(isset($_REQUEST['upload'])){
 
 
 <?php 
+
 
 $arrPics = loadProjectPictures($PID);
 echo '<div id="project_pictures">';

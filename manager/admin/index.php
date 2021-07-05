@@ -247,7 +247,7 @@
                 labelIndx: "text",
 
                       options: arrStatus, 
-                     
+
                 listeners: ['change']
 
             },
@@ -381,7 +381,9 @@
 
             },
 			
+
 			 {   title: "Gia Công & Giao Hàng", width: 160, dataIndx: "delivery_note",
+
 
                 editor: {type:'textarea', attr:'rows=7'} ,
 
@@ -398,12 +400,14 @@
                 },
 
             },
+
             
              { title: "Pictures", width: 120, dataIndx: "",render: function(ui){
 				return '<div class="showPictures" product_id="'+ui.rowData['PID']+'">Xem</div>';			
 
             }},
             
+
 
 
             { title: "Deadline", width: "120", dataIndx: "deadline",type:'text',dataType:'text',
@@ -543,6 +547,7 @@
 
             width:'98%',
 
+
             height:'95%',
 
             showBottom: false,
@@ -560,6 +565,7 @@
             selectionModel: { type: 'cell' },
 
             pageModel: { type: "local", rPP: 150, strRpp: "{0}", strDisplay: "{0} to {1} of {2}" },
+
 
             numberCell: { show: false },
 
@@ -1208,6 +1214,7 @@
 
         });  
 
+
         $(document).on('click', '.showPictures',function(){
 
             var PID = $(this).attr('product_id');
@@ -1250,6 +1257,7 @@
 
         });  
 
+
     });
 
   
@@ -1263,6 +1271,7 @@
 <div id="pid_timeline" PID="0"></div>
 
 <div id="pid_picture" PID="0"></div>
+
 
  <div title="Thu Chi" id="popup" style="overflow:hidden; display:none;">
 
@@ -1278,11 +1287,13 @@
 
 </div>
 
+
 <div title="Pictures" id="popupPicture" style="overflow:hidden; display:none;">
 
      <iframe src="/manager/admin/picture.php" width="100%" height="100%"></iframe>
 
 </div>
+
 
 </body>
 

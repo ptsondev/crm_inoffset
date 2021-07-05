@@ -16,6 +16,7 @@ define('DB_NAME', 'crm'); // database name
 */
 
 
+
 define('STT_DA_HUY', 0);
 
 define('STT_MOI', 1);
@@ -52,6 +53,7 @@ $arrStt[7]='Duyệt In';
 
 $jsonArrStt = json_encode($arrStt);
 define('ARR_STT', $jsonArrStt);
+
 
 
 define('ROLE_ADMIN', 1);

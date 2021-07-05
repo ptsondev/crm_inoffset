@@ -12,10 +12,10 @@
         die;
 
     }
+
       if(is_mobile()){
          header("Location: /manager/admin/sale_mobile.php");
     }
-
 
     $user = $_SESSION['user'];
 
