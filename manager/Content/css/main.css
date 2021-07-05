@@ -1,5 +1,3 @@
-
-
 .pq-grid{
 
 	box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.75);
@@ -106,13 +104,8 @@ div.selecttheme-div{
 
 body{
 
-    /*background:url(@Url.Content("~/pro2/Content/images/grid2.png"));*/
-
-    background:url("../images/grid2.png");
-
+  
     font-family: arial;
-
-    /*margin-top:50px;*//*causes issue with jqueryui datepicker positioning with fixed navbar*/
 
 }
 
@@ -389,12 +382,9 @@ border-left-color: #111111;
 .money{
     text-align: right;
 }
-<<<<<<< HEAD
+
 .showTCDetail,
 .showPictures{
-=======
-.showTCDetail{
->>>>>>> 194c50800d9597c1fb605c28be411e95ad395033
 
     color:deepskyblue;
 
@@ -529,13 +519,12 @@ div.pq-grid
 #mobile-my-task{
     width: 100%;
 }
-<<<<<<< HEAD
+
 
 #mobile-my-task .split{
 	border-bottom: 5px solid #428bca;
 }
-=======
->>>>>>> 194c50800d9597c1fb605c28be411e95ad395033
+
 #mobile-my-task td{
     border:1px solid #aaa;
     padding: 5px;
