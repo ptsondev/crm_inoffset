@@ -8,21 +8,11 @@ show_header_include('Timeline');
 
 
 
-<script>
-
-	var PID = $('#pid_timeline', window.parent.document).attr('pid'); 	
-
-	createCookie('pid_timeline', PID);
-
-</script>
-
-
 
 <?php 
 
-	$pid =  $_COOKIE["pid_timeline"];
-
-	$timeline = getTimelineByPID($pid);	
+	$PID = $_REQUEST['PID'];
+	$timeline = getTimelineByPID($PID);	
 
 	//var_dump($timeline);die;
 	if(count($timeline)<1){
@@ -204,7 +194,7 @@ show_header_include('Timeline');
 	</div>
 
 
-	<input type="button" value="Save" id="btnUpdateTimeline" pid="<?php echo $pid;?>" />
+	<input type="button" value="Save" id="btnUpdateTimeline" pid="<?php echo $PID;?>" />
 	<div id="result"></div>
 	
 	

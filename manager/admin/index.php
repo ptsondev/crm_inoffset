@@ -21,6 +21,9 @@
         die;    
 
     }
+    if(is_mobile()){
+         header("Location: /manager/admin/sale_mobile.php");
+    }
 
     display_site_header();
 
@@ -29,10 +32,6 @@
 <script class="ppjs">
 
     $.paramquery.pqSelect.prototype.options.bootstrap.on = true;
-
-
-
-    
 
     var arrStatus = [
 
@@ -543,14 +542,13 @@
 
         var obj = { 
 
-            title: "Quản lý dự án",
+            title: "Quản lý đơn hàng",
 
             width:'98%',
 
+            height:'90%',
 
-            height:'95%',
-
-            showBottom: false,
+            showBottom: true,
 
             dataModel: dataModel,
 
@@ -577,7 +575,7 @@
 
                 items: [
 
-                    { type: 'button', icon: 'ui-icon-plus', label: 'New Project', listener:
+                    { type: 'button', icon: 'ui-icon-plus', label: 'Thêm Đơn Hàng', listener:
 
                         { "click": function (evt, ui) {
 
@@ -1091,10 +1089,10 @@
         
 
         $(document).on('click', '.showTCDetail',function(){
-
+        
             var PID = $(this).attr('product_id');
-
             $('#pid_detail_tc').attr('PID', PID);
+            
 
             $("#popup")            
 
@@ -1176,7 +1174,8 @@
 
             var PID = $(this).attr('product_id');
 
-            $('#pid_timeline').attr('PID', PID);
+            
+            $('#popupTimeline iframe').attr('src', '/manager/admin/timeline.php?PID='+PID);
 
             $("#popupTimeline")            
 
@@ -1219,7 +1218,7 @@
 
             var PID = $(this).attr('product_id');
 
-            $('#pid_picture').attr('PID', PID);
+            $('#popupPicture iframe').attr('src', '/manager/admin/picture.php?PID='+PID);
 
             $("#popupPicture")            
 
@@ -1267,11 +1266,6 @@
 <div id="grid_php" style="margin:5px auto;"></div>
 
 <div id="pid_detail_tc" PID="0"></div>
-
-<div id="pid_timeline" PID="0"></div>
-
-<div id="pid_picture" PID="0"></div>
-
 
  <div title="Thu Chi" id="popup" style="overflow:hidden; display:none;">
 

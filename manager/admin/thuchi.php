@@ -10,7 +10,7 @@ show_header_include('Thu Chi');
     
 
       var curPID = $('#pid_detail_tc', window.parent.document).attr('PID');
-
+      
         var sumPlus = 0;
 
         var sumMinor = 0;

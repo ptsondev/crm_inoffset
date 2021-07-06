@@ -658,3 +658,24 @@ img.picture{
     color: #fff;
     font-weight: bold;
 }
+
+#site-header{
+    background: #428bca;
+    color: #FFF;
+}
+#site-header a{
+    color: #FFF;   
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+.pq-item-close{
+    background:url("images/close.png") no-repeat 100% 100%;
+    opacity: 0.4;
+    background-size: contain;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 3px !important;
+}

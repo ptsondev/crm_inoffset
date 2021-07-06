@@ -8,33 +8,19 @@
     $targetDir = dirname(__FILE__) ."/../../uploads/"; 
 ?>
 
-
-<script>
-
-	var PID = $('#pid_picture', window.parent.document).attr('pid'); 	
-
-	createCookie('pid_picture', PID);
-
-</script>
-
-
-
-<form action="/manager/admin/picture.php" method="post" enctype="multipart/form-data">
+<form action="" method="post" enctype="multipart/form-data">
     Select Image Files to Upload:
     <input type="file" name="files[]" multiple >
     <input type="submit" name="upload" value="UPLOAD" >
 </form>
 
 
+
 <?php 
 
 
-$PID =  $_COOKIE["pid_picture"];
-/*
-if(isset($_REQUEST['PID'])){
-    $PId = $_REQUEST['PID'];
-}
-*/
+
+$PID = $_REQUEST['PID'];
 
 $dbh = getDBH();
 

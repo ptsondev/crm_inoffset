@@ -15,8 +15,8 @@ function show_header_include($title='Quản Lý Đơn Đặt In'){?>
 
 
 <script src="../Content/js/jquery.min.js"></script>
-<script src="../Content/js/jquery-ui.min.js"></script>
-<script src="../Content/js/bootstrap.min.js"></script>
+<script src="../Content/css/jquery-ui/jquery-ui.min.js"></script>
+<script src="../Content/css/bootstrap/bootstrap.min.js"></script>
 <script src="../Content/js/pqgrid.min.js"></script>
 <script src="../Content/js/pqselect.min.js"></script>
 <script src="../Content/js/slib.js"></script>
@@ -25,10 +25,14 @@ function show_header_include($title='Quản Lý Đơn Đặt In'){?>
 
 
 
-<link rel="stylesheet" href="../Content/css/bootstrap.css" >
-<link rel="stylesheet" href="../Content/css/jquery-ui.css">
+<link rel="stylesheet" href="../Content/css/bootstrap/bootstrap.css" >
+<link rel="stylesheet" href="../Content/css/jquery-ui/jquery-ui.css">
+<link rel="stylesheet" href="../Content/css/fontawesome/css/all.css">
 <link rel="stylesheet" href="../Content/css/jquery-ui.theme.min.css">
 <link rel="stylesheet" href="../Content/css/jquery-ui.structure.min.css">
+
+
+
 <link rel="stylesheet" href="../Content/css/pqgrid.min.css" >
 <link rel="stylesheet" href="../Content/css/pqselect.min.css" >    
 <link rel="stylesheet" href="../../themes/Office/pqgrid.css" >  

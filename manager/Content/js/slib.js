@@ -1,10 +1,12 @@
 function formatNumber (num) {
+    if(num){
         num = num.toString();
 
         num = num.replace(/\./g, '');
 
         return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
-    
+    }
+    return 0;
 }
 
 

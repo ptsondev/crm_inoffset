@@ -272,22 +272,24 @@ function reAssignProject($pid){
 function display_site_header(){    
     if(is_login()){
         $user = $_SESSION['user'];
-        echo '<div id="header-right">';
-            echo '<span>Welcome, '.$user['fullname'].'</span>';
-            echo '<a href="/logout.php">Thoát</a>';
-        echo '</div>';
-
-        if($user['role']==ROLE_ADMIN){
-            echo '<div id="header-left">';
-                echo '<a href="/manager/admin">Đơn Hàng</a>';
-                echo '<a href="/manager/papers">Giấy</a>';                
-				echo '<a href="/manager/counter">Counter | In Nhanh</a>';
-                echo '<a href="/manager/delivery">Giao Hàng</a>';
-                echo '<a href="/manager/thuchi">Thu Chi</a>';
-				//echo '<a href="/manager/staff">Nhân Sự</a>';
-                
+        echo '<div id="site-header">';
+            echo '<div id="header-right">';
+                echo '<span>Welcome, '.$user['fullname'].'</span>';
+                echo ' | <a href="/logout.php">Thoát</a>';
             echo '</div>';
-        }
+
+            if($user['role']==ROLE_ADMIN){
+                echo '<div id="header-left">';
+                    echo '<a href="/manager/admin"><i class="fas fa-notes-medical"></i> Đơn Hàng</a>';
+                    echo '<a href="/manager/papers"><i class="far fa-sticky-note"></i> Giấy</a>';                
+    				echo '<a href="/manager/counter"><i class="fas fa-print"></i> Counter | In Nhanh</a>';
+                    echo '<a href="/manager/delivery/giaohang.php"><i class="fas fa-shipping-fast"></i> Giao Hàng</a>';
+                    echo '<a href="/manager/thuchi"><i class="fas fa-dollar-sign"></i> Thu Chi</a>';
+    				//echo '<a href="/manager/staff">Nhân Sự</a>';
+                    
+                echo '</div>';
+            }
+        echo '</div>';
     }
 }
 
