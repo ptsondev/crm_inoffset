@@ -381,3 +381,41 @@ $arrStt[7]='Duyệt In';
     //$arrStt = json_decode(ARR_STT);
     return $arrStt[$sttID];
 }
+
+
+function renderProjectTableMobile($projects){
+    $i=1;
+    $html='<table id="mobile-my-task">';
+    foreach($projects as $p){
+        $class = ($i%2==0)? 'odd':'even';
+        
+        
+        $html.= '<tr  class=" item '.$class.' '.$p['PID'].'">';
+            $html.= '<td class="split" rowspan="6"><b>PID:</b> '.$p['PID'].'</td>'; 
+            
+            $html.= '<td><b>Tên Khách:</b> '.$p['name'].' </td>';
+        $html.= '</tr>';    
+        $html.= '<tr  class="item '.$class.' '.$p['PID'].'">';
+            $html.= '<td><b>SDT:</b> '.$p['phone'].' - <b>Email:</b> '.$p['email'].'</td>';
+        $html.= '</tr>';
+        $html.= '<tr  class="item '.$class.' '.$p['PID'].'">';
+            $html.= '<td><b>SDT:</b> '.displayStatusBySTTID($p['status']).'</td>';
+        $html.= '</tr>';
+        $html.= '<tr  class="item '.$class.' '.$p['PID'].'">';
+            $html.= '<td><b>Mô Tả & Quy Cách:</b></br> '.nl2br($p['summary']).'</td>';
+        $html.= '</tr>';
+        $html.= '<tr  class="item '.$class.' '.$p['PID'].'">';
+            $html.= '<td><b>Thông tin & Quy cách:</b></br> '.nl2br($p['steps']).'</td>';
+        $html.= '</tr>';
+        $html.= '<tr  class="split item '.$class.' '.$p['PID'].'">';
+            $html.= '<td><b>Giao Hàng:</b><br/> '.nl2br($p['delivery_note']).'</td>';
+        $html.= '</tr>';
+       
+        $i++;
+    }
+
+
+
+    $html.= '</table>';
+    return $html;
+}

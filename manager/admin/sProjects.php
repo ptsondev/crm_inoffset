@@ -324,7 +324,7 @@ if( isset($_REQUEST['list'])){
 
        
 
-        $sql = "Select * From projects WHERE PID>? GROUP BY PID ORDER BY PID DESC";
+        $sql = "SELECT PID, name, source, phone, email, status, last_process, created FROM projects WHERE PID>? GROUP BY PID ORDER BY PID DESC";
 
         
 

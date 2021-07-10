@@ -66,13 +66,13 @@ function updateSingle($pdo, $r){
 
     /* Update theo data hiện tại */
 
-    $sql = 'UPDATE projects SET name=?,phone=?,email=?,address=?,status=?,price_out=?,steps=?,summary=?,sum_out=?,sum_in=? WHERE PID=?';
+    $sql = 'UPDATE projects SET name=?,source=?,phone=?,email=?,deadline=?,status=?,price_out=?,steps=?,summary=?,summary_design=?, delivery_note=?, sum_out=?,sum_in=?,saleID=? WHERE PID=?';
 
     $stmt = $pdo->prepare($sql);
 
-    $result = $stmt->execute(array($r->name,$r->phone,$r->email,$r->address,$r->status,$r->price_out,$r->steps,$r->summary,
+    $result = $stmt->execute(array($r->name,$r->source,$r->phone,$r->email,$r->deadline,$r->status,$r->price_out,$r->steps,$r->summary,$r->summary_design,$r->delivery_note,
 
-                                   $r->sum_out,$r->sum_in,$r->PID));
+                                   $r->sum_out,$r->sum_in, $r->saleID, $r->PID));
 
  
 
@@ -88,7 +88,7 @@ function updateSingle($pdo, $r){
 
     /* neu vua moi ky => tao timeline ghi nhan sale */
 
-    if($oldStatus!=STT_DA_KY && $r->status == STT_DA_KY){
+    if($oldStatus!=STT_DA_KY && ($r->status == STT_DA_KY || $r->status==STT_DUYET_IN)){
 
         $user = $_SESSION['user'];
 
@@ -302,43 +302,20 @@ if( isset($_REQUEST['list'])){
 
 }else{
 
-    //session_start();
 
-   // if (!isset($_SESSION["Projects"]))
+       
 
-    //{
+        $sql = "SELECT PID, name, source, phone, email, status, last_process, created FROM projects ORDER BY PID DESC";
 
-        $sql = "SELECT MAX(PID) as mm FROM projects";
+        
 
         $stmt = $dbh->prepare($sql);
 
         $stmt->execute();
 
-        $maxPID = $stmt->fetchAll(PDO::FETCH_ASSOC);       
-
-        $maxPID = $maxPID[0]['mm'];
-
-        
-
-        //add in session["Projects"];
-
-            $sql = "Select * From projects ORDER BY PID ASC"; 
-
-        $stmt = $dbh->prepare($sql);
-
-        $stmt->execute(array($maxPID-300));
-
         $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);       
 
-        //$_SESSION["Projects"]= json_encode($projects);         
 
-    //} 
-
-    
-
-    //$projects = json_decode($_SESSION["Projects"], true);
-
-    
 
     
 

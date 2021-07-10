@@ -3,20 +3,10 @@
     require_once '../mylib.php';
 
     require_once '../include.php';    
-    show_header_include('Hình minh hoạ đơn hàng');
+  
 
     $targetDir = dirname(__FILE__) ."/../../uploads/"; 
-?>
 
-<form action="" method="post" enctype="multipart/form-data">
-    Select Image Files to Upload:
-    <input type="file" name="files[]" multiple >
-    <input type="submit" name="upload" value="UPLOAD" >
-</form>
-
-
-
-<?php 
 
 
 
@@ -25,13 +15,14 @@ $PID = $_REQUEST['PID'];
 $dbh = getDBH();
 
 
-if(isset($_REQUEST['upload'])){ 
     // File upload configuration 
     
     $allowTypes = array('jpg','png','jpeg','gif'); 
      
     $statusMsg = $errorMsg = $insertValuesSQL = $errorUpload = $errorUploadType = ''; 
     $fileNames = array_filter($_FILES['files']['name']); 
+
+    $resultHTML='';
     if(!empty($fileNames)){ 
         foreach($_FILES['files']['name'] as $key=>$val){ 
             // File upload path 
@@ -50,10 +41,14 @@ if(isset($_REQUEST['upload'])){
                     // Image db insert sql 
                     $insertValuesSQL .= "('".$fileName."', NOW()),"; 
                         $sql = 'INSERT INTO pictures (PID, url) VALUES (?,?)';
-
                         $stmt = $dbh->prepare($sql);
+                        $result = $stmt->execute(array($PID, 'uploads/'.$fileName));
 
-                        $result = $stmt->execute(array($PID, $fileName));
+
+                    $resultHTML.= '<div class="pic pic-x">';
+                        $resultHTML.= '<img src="../../uploads/'.$fileName.'" class="picture"  />';
+                        $resultHTML.= '<div class="rm_pic" picture_id="xxx"" >X</div>';
+                    $resultHTML.= '</div>';
 
                 }else{ 
                     $errorUpload .= $_FILES['files']['name'][$key].' | '; 
@@ -61,6 +56,7 @@ if(isset($_REQUEST['upload'])){
             }else{ 
                 $errorUploadType .= $_FILES['files']['name'][$key].' | '; 
             } 
+
         } 
          
         // Error message 
@@ -68,30 +64,10 @@ if(isset($_REQUEST['upload'])){
         $errorUploadType = !empty($errorUploadType)?'File Type Error: '.trim($errorUploadType, ' | '):''; 
         $errorMsg = !empty($errorUpload)?'<br/>'.$errorUpload.'<br/>'.$errorUploadType:'<br/>'.$errorUploadType; 
          
-       //echo $insertValuesSQL;
+     
+        echo $resultHTML;
 
 
     }else{ 
         $statusMsg = 'Please select a file to upload.'; 
     } 
-} 
-?>
-
-
-
-
-
-
-<?php 
-
-
-$arrPics = loadProjectPictures($PID);
-echo '<div id="project_pictures">';
-foreach ($arrPics as $pic_id => $url){
-    echo '<div class="pic pic-'.$pic_id.'">';
-        echo '<img src="../../uploads/'.$url.'" class="picture"  />';
-        echo '<div class="rm_pic" picture_id="'.$pic_id.'"" >X</div>';
-    echo '</div>';
-}
-echo '</div>';
-?>

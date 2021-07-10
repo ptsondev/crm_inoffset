@@ -13,17 +13,9 @@ $dbh = getDBH();
 if(isset($_REQUEST['action']) && $_REQUEST['action']=='updateTimeLine' ){
 
     $pid = $_REQUEST['pid'];
-
-    
-
     $sql = "UPDATE timeline SET UID=?, note=? WHERE TID=?";
-
     $stmt = $dbh->prepare($sql);
-
     $stmt->execute(array($_REQUEST['saleUID'], $_REQUEST['noteSale'], $_REQUEST['saleTID']));
-
-
-
 
 
     $sql = "UPDATE timeline SET UID=?, note=? WHERE TID=?";
@@ -55,6 +47,22 @@ if(isset($_REQUEST['action']) && $_REQUEST['action']=='updateTimeLine' ){
     $stmt->execute(array($last_process, $pid));
 
     
+    echo "1";
+}else if(isset($_REQUEST['action']) && $_REQUEST['action']=='updateTimeLine2' ){
+    $pid = $_REQUEST['pid'];
+    $cur = time();
+    $sql = "UPDATE timeline SET UID=?, note=?, finish=1, created=? WHERE TID=?";
+    $stmt = $dbh->prepare($sql);
+    $stmt->execute(array($_REQUEST['uid'],$_REQUEST['note'], $cur, $_REQUEST['tid']));
+
+    reAssignProject($pid);
+
+
+    // thêm tiến độ cụ thể vào last_process
+    $last_process = 'Đã '.$_REQUEST['task'].' - '.$_REQUEST['note'];
+    $sql = "UPDATE projects SET last_process=? WHERE PID=?";
+    $stmt = $dbh->prepare($sql);
+    $stmt->execute(array($last_process, $pid));
     echo "1";
 
 }else if(isset($_REQUEST['action']) && $_REQUEST['action']=='addCounter' ){
@@ -150,4 +158,43 @@ if(isset($_REQUEST['action']) && $_REQUEST['action']=='updateTimeLine' ){
     $sql = "DELETE FROM pictures WHERE picture_id=?";
     $stmt = $dbh->prepare($sql);
     $stmt->execute(array($picture_id));
+}else if(isset($_REQUEST['action']) && $_REQUEST['action']=='loadProjectDetail' ){
+    $PID = $_REQUEST['PID'];
+    $sql = "SELECT * FROM projects WHERE PID=?";
+    $stmt = $dbh->prepare($sql);
+    $stmt->execute(array($PID));
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);  
+
+    // pictures
+    $arrPics = loadProjectPictures($PID);
+    $picture_html='';
+    foreach ($arrPics as $pic_id => $url){
+        $picture_html.= '<div class="pic pic-'.$pic_id.'">';
+            $picture_html.= '<img src="/'.$url.'" class="picture"  />';
+            $picture_html.= '<div class="rm_pic" picture_id="'.$pic_id.'"" >X</div>';
+        $picture_html.= '</div>';
+    }
+    $result[0]['pictures']=$picture_html;
+
+    echo json_encode($result[0]);
+    return;
+}else if(isset($_REQUEST['action']) && $_REQUEST['action']=='updateProjectDetail' ){
+    $PID = $_REQUEST['PID'];    
+    $sql = "UPDATE projects SET summary=?, summary_design=?, delivery_note=?, admin_note=? WHERE PID=?";
+    $stmt = $dbh->prepare($sql);
+    $stmt->execute(array($_REQUEST['summary'], $_REQUEST['summary_design'], $_REQUEST['delivery_note'], $_REQUEST['admin_note'], $PID));
+    echo "Đã lưu";
+}else if(isset($_REQUEST['action']) && $_REQUEST['action']=='searchProject' ){
+    $sql = "SELECT * FROM projects WHERE ";
+    $sql.= "PID LIKE '%".$_REQUEST['pid']."%' ";
+    $sql.= "AND email LIKE '%".$_REQUEST['email']."%' ";
+    $sql.= "AND name LIKE '%".$_REQUEST['name']."%' ";
+    $sql.= "AND phone LIKE '%".$_REQUEST['phone']."%' ";
+    $sql.= "ORDER BY PID DESC";
+    //echo $sql;die;
+    $stmt = $dbh->prepare($sql);
+    $stmt->execute();
+    $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);         
+    echo renderProjectTableMobile($projects); 
+    return;
 }

@@ -71,8 +71,8 @@ define('ROLE_DELIVERY', 6);
 
 define('TASK_SALE', 'Tiếp Nhận Đơn Hàng');
 define('TASK_DESIGN', 'Xử Lý File');
-define('TASK_PRINT', 'In Ấn');
-define('TASK_PROCESS', 'Gia Công Thành Phẩm');
+define('TASK_PRINT', 'In');
+define('TASK_PROCESS', 'Gia Công');
 define('TASK_DELIVERY', 'Giao Hàng');
 
 

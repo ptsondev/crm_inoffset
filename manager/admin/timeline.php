@@ -27,7 +27,9 @@ show_header_include('Timeline');
 
 <form id="f-timeline">
 
-	<div class="item">
+	<h3> Tiến độ của đơn hàng <span id="PID"><?php echo $PID;?></span></h3>
+
+	<div class="item"  <?php echo 'tid="'.$timeline[0]['TID'].'"'; ?> >
 
 		<?php 
 
@@ -57,10 +59,9 @@ show_header_include('Timeline');
 	</div>
 
 
-
 	
 
-	<div class="item">
+	<div class="item"  <?php echo 'tid="'.$timeline[1]['TID'].'"'; ?> >
 
 		<?php 
 
@@ -87,7 +88,12 @@ show_header_include('Timeline');
 		?>
 		<input type="text" class="text-full" id="noteDesign" value="<?php echo $timeline[1]['note']; ?>"/>
 		<span class="ddate"><?php if($timeline[1]['finish']==1)   echo date('h:i:s d/m/Y', $timeline[1]['created']);?></span>
-
+		<?php 
+			if($timeline[1]['finish']!=1){
+				echo '<button tid="'.$timeline[1]['TID'].'" task="'.$timeline[1]['task'].'" class="tlFinish" id="btnTLFinishBinhFile">Hoàn Thành</button>';
+			}
+		?>
+		
 		
 	</div>
 
@@ -95,8 +101,7 @@ show_header_include('Timeline');
 
 	
 
-	<div class="item">
-
+	<div class="item"  <?php echo 'tid="'.$timeline[2]['TID'].'"'; ?> >
 		<?php 
 
 			$disable = count($timeline)>1? '':'disabled="disabled"';
@@ -121,15 +126,19 @@ show_header_include('Timeline');
 
 		?>
 		<input type="text" class="text-full" id="notePrint" value="<?php echo $timeline[2]['note']; ?>"/>
-		<span class="ddate"><?php if($timeline[2]['finish']==1)  echo date('h:i:s d/m/Y', $timeline[2]['created']);?></span>
-		
+		<span class="ddate"><?php if($timeline[2]['finish']==1)  echo date('h:i:s d/m/Y', $timeline[2]['created']);?></span>		
+		<?php 
+			if($timeline[2]['finish']!=1){
+				echo '<button tid="'.$timeline[2]['TID'].'"  task="'.$timeline[2]['task'].'"  class="tlFinish" id="btnTLFinishInAn">Hoàn Thành</button>';
+			}
+		?>
 	</div>
 
 
 
 	
 
-	<div class="item">
+	<div class="item"  <?php echo 'tid="'.$timeline[3]['TID'].'"'; ?> >
 
 		<?php 
 
@@ -157,13 +166,18 @@ show_header_include('Timeline');
 		<input type="text" class="text-full" id="noteProcess" value="<?php echo $timeline[3]['note']; ?>"/>
 		<span class="ddate"><?php if($timeline[3]['finish']==1)  echo date('h:i:s d/m/Y', $timeline[3]['created']);?></span>
 		
+		<?php 
+			if($timeline[3]['finish']!=1){
+				echo '<button tid="'.$timeline[3]['TID'].'"  task="'.$timeline[3]['task'].'"  class="tlFinish" id="btnTLFinishGiaCong">Hoàn Thành</button>';
+			}
+		?>
 	</div>
 
 
 
 	
 
-	<div class="item">
+	<div class="item"  <?php echo 'tid="'.$timeline[4]['TID'].'"'; ?> >
 
 		<?php 
 
@@ -190,11 +204,16 @@ show_header_include('Timeline');
 		?>
 		<input type="text" class="text-full" id="noteDelivery" value="<?php echo $timeline[4]['note']; ?>"/>
 		<span class="ddate"><?php if($timeline[4]['finish']==1)  echo date('h:i:s d/m/Y', $timeline[4]['created']);?></span>
-		
+		<?php 
+			if($timeline[4]['finish']!=1){
+				echo '<button tid="'.$timeline[4]['TID'].'"  task="'.$timeline[4]['task'].'"  class="tlFinish" id="btnTLFinishGiaoHang">Hoàn Thành</button>';
+			}
+		?>
+
 	</div>
 
 
-	<input type="button" value="Save" id="btnUpdateTimeline" pid="<?php echo $PID;?>" />
+	<!--<input type="button" value="Save" id="btnUpdateTimeline" pid="<?php echo $PID;?>" />-->
 	<div id="result"></div>
 	
 	

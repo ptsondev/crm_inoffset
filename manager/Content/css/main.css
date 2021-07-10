@@ -1,3 +1,10 @@
+body{
+    font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+div.pq-grid *{
+    font-size: 15px;
+}
 .pq-grid{
 
 	box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.75);
@@ -101,13 +108,6 @@ div.selecttheme-div{
     border:1px dotted lightblue;
 
 }*/
-
-body{
-
-  
-    font-family: arial;
-
-}
 
 .container-logo
 
@@ -523,11 +523,13 @@ div.pq-grid
 
 #mobile-my-task .split{
 	border-bottom: 5px solid #428bca;
+    width: 60px;
 }
 
 #mobile-my-task td{
     border:1px solid #aaa;
     padding: 5px;
+    word-break: break-word;
 }
 #mobile-my-task .odd{
     background: #ddd;
@@ -638,7 +640,7 @@ tr:has(+ td.pending){
     display: inline-block;;
 }
 img.picture{
-    height: 200px;
+    height: 100px;
     width: auto;
 }
 #project_pictures .pic{
@@ -678,4 +680,156 @@ img.picture{
     height: 14px;
     display: inline-block;
     margin-right: 3px !important;
+}
+#project-detail{
+    background: #fff;
+    border: 1px solid #ccc;
+    z-index: 9;
+    position: fixed;
+    top:120px;
+    right:30px;
+    width: 45%;
+    height: 750px;
+    padding: 10px 20px;
+   -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+
+}
+#project-detail textarea{
+    font-size: 14px;
+}
+#project-detail h3{
+    color: #428bca;
+    font-weight: bold;
+    font-size: 18px;
+    margin:10px 0;
+}
+#p-summary{
+    width: 100%;
+    height: 200px;
+}
+#p-summary-design{
+    width: 100%;
+    height: 100px;
+}
+#p-delivery{
+    width: 100%;
+    height: 50px;
+}
+#p-admin-note{
+    width: 100%;
+    height: 120px;
+}
+#project-detail #admin-note h3{
+    
+}
+#project-detail #admin-note {    
+    margin-top: 20px;
+    border:2px dashed #333;
+    padding:10px;
+}
+#btnShowThuChi, 
+.s-button{
+   color: black;
+  display: inline-block;
+  width: 100%;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+}
+#btnShowThuChi{
+    margin-bottom: 20px;
+}
+
+.crm_button{
+   background: #428bca;
+   display: inline-block;
+   width: 100%;
+   height: 40px;
+   border:none;
+   margin-top: 30px;
+   color: #FFF;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+#btnUpdateProject:hover{
+    background: #333;
+}
+#FilesUpload{
+  color: transparent;
+}
+#FilesUpload::-webkit-file-upload-button {
+  visibility: hidden;
+}
+#FilesUpload::before {
+  content: 'Select Pictures To Upload';
+  color: black;
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 15px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+}
+#FilesUpload:hover::before {
+  border-color: black;
+}
+#FilesUpload:active {
+  outline: 0;
+}
+#FilesUpload:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+}
+#frmUploadProjectPicture,
+#FilesUpload{
+    width:100%;
+}
+
+#showResult{
+    font-style: italic;
+    color: red;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#frmSearchProject{
+
+}
+#frmSearchProject input[type="text"]{
+    display: inline-block;
+    float: left;
+    width: 48%;
+    margin:2px 1%;
+}
+.mobile-title{
+    text-align: center;
+    margin-top: 20px;
+}
+#btnSearchProject{
+    margin:0px;
+}
+#thuchi-region label{
+    width: 100px;
+}
+#thuchi-region .value{
+    text-align: right;
+    display: inline-block;
+    width: 100px;
 }

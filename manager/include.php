@@ -17,6 +17,7 @@ function show_header_include($title='Quản Lý Đơn Đặt In'){?>
 <script src="../Content/js/jquery.min.js"></script>
 <script src="../Content/css/jquery-ui/jquery-ui.min.js"></script>
 <script src="../Content/css/bootstrap/bootstrap.min.js"></script>
+<script src="../Content/js/jquery.form.js"></script>
 <script src="../Content/js/pqgrid.min.js"></script>
 <script src="../Content/js/pqselect.min.js"></script>
 <script src="../Content/js/slib.js"></script>
@@ -25,7 +26,7 @@ function show_header_include($title='Quản Lý Đơn Đặt In'){?>
 
 
 
-<link rel="stylesheet" href="../Content/css/bootstrap/bootstrap.css" >
+<link rel="stylesheet" href="../Content/css/bootstrap/css/bootstrap.css" >
 <link rel="stylesheet" href="../Content/css/jquery-ui/jquery-ui.css">
 <link rel="stylesheet" href="../Content/css/fontawesome/css/all.css">
 <link rel="stylesheet" href="../Content/css/jquery-ui.theme.min.css">
@@ -39,8 +40,9 @@ function show_header_include($title='Quản Lý Đơn Đặt In'){?>
 <link rel="stylesheet" href="../Content/css/main.css" >  
 
         
-
-        
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 
 
 

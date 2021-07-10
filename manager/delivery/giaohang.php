@@ -57,7 +57,7 @@ function showPictures($PID){
 foreach ($arrPics as $pic_id => $url){
     $html.= '<div class="pic pic-'.$pic_id.'">';
 		$html.= '<label>'.$i++.'</label>';
-        $html.= '<img src="../../uploads/'.$url.'" class="picture"  />';
+        $html.= '<img src="/'.$url.'" class="picture"  />';
     $html.= '</div>';
 }
 $html.= '</div>';

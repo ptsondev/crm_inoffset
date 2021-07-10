@@ -1,10 +1,8 @@
 <?php
 
     require_once '../mylib.php';
-
     require_once '../include.php';
-
-    show_header_include('Quản Lý Đơn Hàng - ALL');
+    show_header_include('Quản Lý Đơn Hàng - All');
 
     if(!is_login()){        
 
@@ -16,31 +14,25 @@
 
     $user = $_SESSION['user'];
 
-    if($user['role']!=ROLE_ADMIN && $user['role']!=ROLE_SALE){
+    if($user['role']!=ROLE_ADMIN){
 
         header("Location: /");
 
         die;    
 
     }
-
-
-
-
-
-
+    if(is_mobile()){
+         header("Location: /manager/admin/sale_mobile.php");
+    }
 
     display_site_header();
 
 ?>
 
 <script class="ppjs">
+    var PID = 0;
 
     $.paramquery.pqSelect.prototype.options.bootstrap.on = true;
-
-
-
-    
 
     var arrStatus = [
 
@@ -51,14 +43,36 @@
                         { "value": "2", "text": "Đã Báo Giá" },
 
                         { "value": "3", "text": "Đã Ký" },     
+                        
+                        { "value": "7", "text": "Duyệt In" },
 
                         { "value": "4", "text": "Đã Làm Xong" },
 
-                        { "value": "5", "text": "Đã Giao Hàng" },
+                        { "value": "5", "text": "Đã Giao Hàng - Chưa Thu Tiền" },
 
-                        { "value": "6", "text": "Đã Hoàn Thành" }
+                        { "value": "8", "text": "Đã Giao Hàng - Đã Thu Tiền" },
+                        
+                        { "value": "6", "text": "Đã Hoàn Thành" },
 
                     ];
+
+
+
+     var arrSourceKhach = [
+
+                        { "value": "1", "text": "Khách Cũ" },
+
+                        { "value": "2", "text": "Khách Quay Lại" },
+
+                        { "value": "3", "text": "Khách Giới Thiệu" },     
+                        
+                        { "value": "4", "text": "Khách Mới - GG Ads" },
+
+                        { "value": "5", "text": "Khách Mới - FB Ads" },
+
+                        { "value": "10", "text": "Khác" },
+
+                    ]; 
 
     var users = [];
 
@@ -156,15 +170,73 @@
 
         var colM = [
 
-            { title: "PID", width: 10, dataIndx: "PID", editable: false },            
+            { title: "PID", width: 10, dataIndx: "PID", editable: false,  filter: { type: 'textbox', condition: 'contain', listeners: ['keyup'] } },          
 
-            { title: "Tên Khách", width: 100, dataIndx: "name", filter: { type: 'textbox', condition: 'contain', listeners: ['keyup'] }},
+            { title: "Tên Khách", width: 150, dataIndx: "name", filter: { type: 'textbox', condition: 'contain', listeners: ['keyup'] }},
 
-            { title: "SDT", width: 100, dataIndx: "phone",  filter: { type: 'textbox', condition: 'contain', listeners: ['keyup'] }},
+             { title: "Khách Từ", width: 150, dataIndx: "source",
 
-            { title: "Email", width: 170, dataIndx: "email",  filter: { type: 'textbox', condition: 'contain', listeners: ['keyup'] }},
+             filter: { type: 'select',
 
-            { title: "Status", width: 120, dataIndx: "status",
+                condition: 'equal',
+
+                valueIndx: "value",
+
+                labelIndx: "text",
+
+                options: arrSourceKhach, 
+
+                listeners: ['change']
+
+            },
+
+             render:function( ui ){
+
+                    var source = ui.cellData;
+                    if(source==1){
+                        return 'Khách Cũ';
+                    }else if(source==2){
+                        return 'Khách Quay Lại';
+                    }else if(source==3){
+                        return 'Khách Giới Thiệu';
+                    }else if(source==4){
+                        return 'Khách Mới - GG Ads';
+                    }else if(source==5){
+                        return 'Khách Mới - FB Ads';
+                    }else if(source==10){
+                        return 'Khác';
+                    }
+                    return '';
+
+                },
+
+              editor:{
+
+                    type: 'select',
+
+                    init: function (ui) {
+
+                        ui.$cell.find("select").pqSelect();
+
+                    },
+
+                    valueIndx: "value",
+
+                    labelIndx: "text",                                      
+
+                    options: arrSourceKhach
+
+                },
+
+                validations: [{ type: 'minLen', value: 1, msg: "Required"}]
+
+            },
+
+            { title: "SDT", width: 110, dataIndx: "phone",  filter: { type: 'textbox', condition: 'contain', listeners: ['keyup'] }},
+
+            { title: "Email", width: 180, dataIndx: "email",  filter: { type: 'textbox', condition: 'contain', listeners: ['keyup'] }},
+
+            { title: "Status", width: 160, dataIndx: "status",
 
              filter: { type: 'select',
 
@@ -206,70 +278,65 @@
 
                     }else if(status==5){                        
 
-                        return 'Đã Giao Hàng';
+                        return 'Đã Giao Hàng - Chưa Thu Tiền';
 
                     }else if(status==6){
 
                         return '<div style="background:#84c428;">Đã Hoàn Thành</div>';                                                                             
 
-                    }                       
+                    }else if(status==7){
+
+                        return '<div class="duyetin">Duyệt In</div>';                                                                             
+
+                    }else if(status==8){
+
+                        return '<div>Đã Giao Hàng - Đã Thu Tiền</div>';                                                                             
+
+                    }
 
                 },
 
               editor:{
 
-		            type: 'select',
+                    type: 'select',
 
-		            init: function (ui) {
+                    init: function (ui) {
 
-		                ui.$cell.find("select").pqSelect();
+                        ui.$cell.find("select").pqSelect();
 
-		            },
+                    },
 
-		            valueIndx: "value",
+                    valueIndx: "value",
 
-		            labelIndx: "text",		            		            
+                    labelIndx: "text",                                      
 
                     options: arrStatus
 
-		        },
+                },
 
-		        validations: [{ type: 'minLen', value: 1, msg: "Required"}]
+                validations: [{ type: 'minLen', value: 1, msg: "Required"}]
 
             },
 
-            {   title: "Mô Tả", width: 300, dataIndx: "summary",
+            { title: "Timeline", width: 150, dataIndx: "",render: function(ui){
+                return ui.rowData['last_process']+'<br><hr><div class="showTimeline" product_id="'+ui.rowData['PID']+'">Xem</div>';         
 
-                editor: {type:'textarea', attr:'rows=7'} ,
-
-                editModel: { keyUpDown: false, saveKey: ''},
-             filter: { type: 'textbox', condition: 'contain', listeners: ['keyup'] },
-
-                render: function (ui) {
-
-                    var val = ui.cellData ? ui.cellData.replace(/\n/g, "<br/>") : "";
-
-                    return val;
-
-                },
-
-            },
-
-             { title: "Ghi Chú", width: 300, dataIndx: "steps",
-
-                editor: {type:'textarea', attr:'rows=7'} ,
-
-                editModel: { keyUpDown: false, saveKey: ''},
+            }},
+        
+           
+            { title: "Ngày đăng", width: "100", dataIndx: "created", dataType: 'date',  editable:false,  hidden:true,      
 
                 render: function (ui) {
 
-                    var val = ui.cellData ? ui.cellData.replace(/\n/g, "<br/>") : "";
+                    var cellData = ui.cellData;
 
-                    return val;
+                    var ts = new Date(cellData * 1000);
 
-                },
+                    return ts.toLocaleDateString();                
 
-            }             
+                }              
+
+            },           
 
         ];
 
@@ -287,13 +354,13 @@
 
         var obj = { 
 
-            title: "Quản lý dự án",
+            title: "Quản lý đơn hàng",
 
             width:'98%',
 
-            height:'98%',
+            height:'90%',
 
-            showBottom: false,
+            showBottom: true,
 
             dataModel: dataModel,
 
@@ -305,9 +372,17 @@
 
             freezeCols:2,            
 
-            selectionModel: { type: 'cell' },
+            
+            selectionModel: { type: 'row'},
+            rowSelect: function (evt, ui) {
+                //console.log('rowSelect', ui);
+                PID = ui.rowData.PID;
+                reloadProjectDetail(ui.rowData.PID);
+            },
 
-            pageModel: { type: "local", rPP: 1000, strRpp: "{0}", strDisplay: "{0} to {1} of {2}" },
+
+            pageModel: { type: "local", rPP: 150, strRpp: "{0}", strDisplay: "{0} to {1} of {2}" },
+
 
             numberCell: { show: false },
 
@@ -319,13 +394,13 @@
 
                 items: [
 
-                    { type: 'button', icon: 'ui-icon-plus', label: 'New Project', listener:
+                    { type: 'button', icon: 'ui-icon-plus', label: 'Thêm Đơn Hàng', listener:
 
                         { "click": function (evt, ui) {
 
                             //append empty row at the end.                            
 
-                            var rowData = { status:"1", assigned:"0"}; //empty row
+                            var rowData = { status:"1", assigned:"0",source:"4"}; //empty row
 
                             var rowIndx = $grid.pqGrid("addRow", { rowData: rowData });
 
@@ -337,6 +412,7 @@
 
                             $grid.pqGrid("editFirstCellInRow", { rowIndx: rowIndx });
 
+                            resetProjectDetailForm();
                         }
 
                         }
@@ -510,8 +586,9 @@
                     if (type == 'add') {
 
                         var valid = grid.isValid({ rowData: newRow, allowInvalid: true }).valid;
-
-                        console.log(valid);
+                        //console.log('ccc');
+                        //console.log(newRow);
+                        
 
                         if (valid) {
 
@@ -774,7 +851,7 @@
         
 
         setInterval(function(){
-
+        // reload after....s
 
 
             $grid.pqGrid("showLoading");
@@ -819,7 +896,7 @@
 
             
 
-        }, 600000);
+        }, 60000);
 
         
 
@@ -830,94 +907,15 @@
         
 
         
-
-        $(document).on('click', '.showTCDetail',function(){
-
-            var PID = $(this).attr('product_id');
-
-            $('#pid_detail_tc').attr('PID', PID);
-
-            $("#popup")            
-
-                .dialog({
-
-                    height: 500,
-
-                    width: 800,
-
-                    //width: 'auto',
-
-                    modal: true,
-
-                    open: function (evt, ui) {   
-
-                        
-
-                    },
-
-                    close: function () {
-
-                         $grid.pqGrid("showLoading");
-
-                        $.ajax({ url: "sProjects_all.php",
-
-                            cache: false,
-
-                            async: true,
-
-                            dataType: "JSON",
-
-                            success: function (response) {
-
-                                var grid = $grid.pqGrid("getInstance").grid;
-
-                                grid.option("dataModel.data", response.data);
-
-
-
-
-
-                                var column = grid.getColumn({ dataIndx: "name" });
-
-                                var filter = column.filter;
-
-                                filter.cache = null;
-
-                                filter.options = grid.getData({ dataIndx: ["name"] });
-
-
-
-                                grid.refreshDataAndView();
-
-                                grid.hideLoading();
-
-                            }
-
-                        });
-
-                    },
-
-                    show: {
-
-                        effect: "blind",
-
-                        duration: 500
-
-                    }
-
-                }); 
-
-        });
-
-           
 
            
 
          $(document).on('click', '.showTimeline',function(){
 
-            var PID = $(this).attr('product_id');
+            PID = $(this).attr('product_id');
 
-            $('#pid_timeline').attr('PID', PID);
+            
+            $('#popupTimeline iframe').attr('src', '/manager/admin/timeline.php?PID='+PID);
 
             $("#popupTimeline")            
 
@@ -925,7 +923,7 @@
 
                     height: 500,
 
-                    width: 800,
+                    width: 1200,
 
                     //width: 'auto',
 
@@ -955,27 +953,89 @@
 
         });  
 
-        
 
+
+
+
+         function reloadProjectDetail(PID){
+            // reset form
+             $('#p-summary').val();
+           $('#p-summary-design').val();
+           $('#p-delivery').val();
+           $('#p-admin-note').val();
+           $('#project_pictures').html();
+
+
+                $.ajax({
+                        url: '/manager/admin/ajax.php',
+                        data: {
+                            action:'loadProjectDetail',
+                            PID:PID
+                        },
+                        async: false,
+                        success:function(response) {
+                            project =  JSON.parse(response);
+                            
+                            $('#p-summary').val(project.summary);
+                            $('#p-summary-design').val(project.summary_design);
+                            $('#p-delivery').val(project.delivery_note);
+                            $('#p-admin-note').val(project.admin_note);
+                            $('#project_pictures').html(project.pictures);
+                        },
+                        error: function(xhr, ajaxOptions, thrownError){
+                            console.log(xhr);
+                            },
+
+                    }); 
+            }
+
+          function updateProjectDetail(PID){
+                $.ajax({
+                        url: '/manager/admin/ajax.php',
+                        data: {
+                            action:'updateProjectDetail',
+                            PID:PID,
+                            summary:$('#p-summary').val(),
+                            summary_design: $('#p-summary-design').val(),
+                            delivery_note: $('#p-delivery').val(),
+                            admin_note: $('#p-admin-note').val()
+                        },
+                        async: false,
+                        success:function(response) {
+                           console.log(response);
+                           $('#showResult').text(response);
+                        },
+                        error: function(xhr, ajaxOptions, thrownError){
+                            console.log(xhr);
+                        },
+
+                    }); 
+            }
+
+
+        // save a project
+        $('#btnUpdateProject').click(function(){
+            updateProjectDetail(PID);
+        });
+
+
+        function resetProjectDetailForm(){
+            $('#p-summary').val('');
+            $('#p-summary-design').val('');
+            $('#p-delivery').val('');
+            $('#p-admin-note').val('');
+        }
     });
-
-    
-
-    
-
-    
-
-    
 
   
 
 </script>    
 
 <div id="grid_php" style="margin:5px auto;"></div>
+<div id="project-detail"><?php require_once('project_detail.php');?></div>
+
 
 <div id="pid_detail_tc" PID="0"></div>
-
-<div id="pid_timeline" PID="0"></div>
 
  <div title="Thu Chi" id="popup" style="overflow:hidden; display:none;">
 
@@ -983,7 +1043,7 @@
 
 </div>
 
-
+<div id="deadlinePicker"></div>
 
 <div title="Timeline" id="popupTimeline" style="overflow:hidden; display:none;">
 
@@ -991,6 +1051,12 @@
 
 </div>
 
+
+<div title="Pictures" id="popupPicture" style="overflow:hidden; display:none;">
+
+     <iframe src="/manager/admin/picture.php" width="100%" height="100%"></iframe>
+
+</div>
 
 
 </body>

@@ -3,7 +3,6 @@
     require_once '../mylib.php';
     require_once '../include.php';
     show_header_include('Quản Lý Đơn Hàng');
-
     if(!is_login()){        
 
         header("Location: /");
@@ -30,6 +29,7 @@
 ?>
 
 <script class="ppjs">
+    var PID = 0;
 
     $.paramquery.pqSelect.prototype.options.bootstrap.on = true;
 
@@ -171,9 +171,9 @@
 
             { title: "PID", width: 10, dataIndx: "PID", editable: false,  filter: { type: 'textbox', condition: 'contain', listeners: ['keyup'] } },          
 
-            { title: "Tên Khách", width: 100, dataIndx: "name", filter: { type: 'textbox', condition: 'contain', listeners: ['keyup'] }},
+            { title: "Tên Khách", width: 150, dataIndx: "name", filter: { type: 'textbox', condition: 'contain', listeners: ['keyup'] }},
 
-             { title: "Khách Từ", width: 130, dataIndx: "source",
+             { title: "Khách Từ", width: 150, dataIndx: "source",
 
              filter: { type: 'select',
 
@@ -231,11 +231,11 @@
 
             },
 
-            { title: "SDT", width: 90, dataIndx: "phone",  filter: { type: 'textbox', condition: 'contain', listeners: ['keyup'] }},
+            { title: "SDT", width: 110, dataIndx: "phone",  filter: { type: 'textbox', condition: 'contain', listeners: ['keyup'] }},
 
-            { title: "Email", width: 150, dataIndx: "email",  filter: { type: 'textbox', condition: 'contain', listeners: ['keyup'] }},
+            { title: "Email", width: 180, dataIndx: "email",  filter: { type: 'textbox', condition: 'contain', listeners: ['keyup'] }},
 
-            { title: "Status", width: 110, dataIndx: "status",
+            { title: "Status", width: 160, dataIndx: "status",
 
              filter: { type: 'select',
 
@@ -317,178 +317,13 @@
 
             },
 
- { title: "Timeline", width: 120, dataIndx: "",render: function(ui){
+            { title: "Timeline", width: 150, dataIndx: "",render: function(ui){
 				return ui.rowData['last_process']+'<br><hr><div class="showTimeline" product_id="'+ui.rowData['PID']+'">Xem</div>';			
 
             }},
-			
-             { title: "Giá Báo", width: 80, dataIndx: "price_out",render: function(ui){
-
-                return formatNumber(ui.cellData);
-
-            }},
-            
-            {   title: "Mô Tả - Quy Cách In", width: 300, dataIndx: "summary",
-
-                editor: {type:'textarea', attr:'rows=7'} ,
-
-                editModel: { keyUpDown: false, saveKey: ''},
-             
-                filter: { type: 'textbox', condition: 'contain', listeners: ['keyup'] },
-
-                render: function (ui) {
-
-                    var val = ui.cellData ? ui.cellData.replace(/\n/g, "<br/>") : "";
-
-                    return val;
-
-                },
-
-            },
-
-            {   title: "Mô Tả Thiết Kế", width: 150, dataIndx: "summary_design",
-
-                editor: {type:'textarea', attr:'rows=7'} ,
-
-                editModel: { keyUpDown: false, saveKey: ''},
-             
-                filter: { type: 'textbox', condition: 'contain', listeners: ['keyup'] },
-
-                render: function (ui) {
-
-                    var val = ui.cellData ? ui.cellData.replace(/\n/g, "<br/>") : "";
-
-                    return val;
-
-                },
-
-            },
-
-             { title: "Ghi Chú Chung", width: 170, dataIndx: "steps",
-
-                editor: {type:'textarea', attr:'rows=7'} ,
-
-                editModel: { keyUpDown: false, saveKey: ''},
-
-                render: function (ui) {
-
-                    var val = ui.cellData ? ui.cellData.replace(/\n/g, "<br/>") : "";
-
-                    return val;
-
-                },
-
-            },
-			
-
-			 {   title: "Gia Công & Giao Hàng", width: 160, dataIndx: "delivery_note",
-
-
-                editor: {type:'textarea', attr:'rows=7'} ,
-
-                editModel: { keyUpDown: false, saveKey: ''},
-             
-                filter: { type: 'textbox', condition: 'contain', listeners: ['keyup'] },
-
-                render: function (ui) {
-
-                    var val = ui.cellData ? ui.cellData.replace(/\n/g, "<br/>") : "";
-
-                    return val;
-
-                },
-
-            },
-
-            
-             { title: "Pictures", width: 120, dataIndx: "",render: function(ui){
-				return '<div class="showPictures" product_id="'+ui.rowData['PID']+'">Xem</div>';			
-
-            }},
-            
-
-
-
-            { title: "Deadline", width: "120", dataIndx: "deadline",type:'text',dataType:'text',
-                    editor: {
-                     type: 'textbox', attr:'type=datetime-local',                                          
-                 },
-                 editModel: { clicksToEdit: 1, saveKey: ''},
-                 
-            },            
-
-            /*
-            { title: "Sale", width: 80, dataIndx: "saleID",
-
-                editor: {
-
-                    type: "select",
-
-                    options: users,
-
-                    valueIndx: "ID",
-
-                    labelIndx: "fullname",
-
-                },
-
-                render:function( ui ){
-
-                     //ui.cellData;
-
-                     user_id = ui.cellData;  
-
-                     var tmp = users.find(function(e) { return e.ID === user_id; });                   
-
-                     if(tmp){
-
-                        return tmp.fullname;
-
-                     }                 
-
-                }
-
-            },
-
-            { title: "Assigned", width: 80, dataIndx: "assigned",
-
-                editor: {
-
-                    type: "select",
-
-                    options: users,
-
-                    valueIndx: "ID",
-
-                    labelIndx: "fullname",
-
-                },
-
-                render:function( ui ){
-
-                     //ui.cellData;
-
-                     user_id = ui.cellData;  
-
-                     var tmp = users.find(function(e) { return e.ID === user_id; });                   
-
-                     if(tmp){
-
-                        return tmp.fullname;
-
-                     }                 
-
-                },
-
-                validations: [
-
-                    { type: 'minLen', value: 1, msg: "Required" }
-
-                ]
-
-            },
-        */
-            { title: "Ngày đăng", width: "80", dataIndx: "created", dataType: 'date',	editable:false,	       
+		
+           
+            { title: "Ngày đăng", width: "100", dataIndx: "created", dataType: 'date',	editable:false,	 hidden:true,      
 
 		        render: function (ui) {
 
@@ -500,31 +335,7 @@
 
 		        }		       
 
-		    },            
-
-            /*{ title: "Giá Gốc", width: 80, dataIndx: "price_in", render: function(ui){
-
-                return formatNumber(ui.cellData);
-
-            }},*/           
-
-            { title: "Tổng Thu", width: 80, dataIndx: "sum_in",render: function(ui){
-
-                return '<div class="showTCDetail" product_id="'+ui.rowData['PID']+'">'+formatNumber(ui.cellData)+'</div>';
-
-            }},
-
-            { title: "Tổng Chi", width: 80, dataIndx: "sum_out", render: function(ui){
-
-                return '<div class="showTCDetail" product_id="'+ui.rowData['PID']+'">'+formatNumber(ui.cellData)+'</div>';
-
-            }},
-
-			{ title: "Lợi Nhuận", width: 80, dataIndx: "loilo", editable:false ,render: function(ui){
-
-                return formatNumber(ui.cellData);
-
-            }}      			
+		    },           
 
         ];
 
@@ -560,7 +371,14 @@
 
             freezeCols:2,            
 
-            selectionModel: { type: 'cell' },
+            
+            selectionModel: { type: 'row'},
+            rowSelect: function (evt, ui) {
+                //console.log('rowSelect', ui);
+                PID = ui.rowData.PID;
+                reloadProjectDetail(ui.rowData.PID);
+            },
+
 
             pageModel: { type: "local", rPP: 150, strRpp: "{0}", strDisplay: "{0} to {1} of {2}" },
 
@@ -593,6 +411,7 @@
 
                             $grid.pqGrid("editFirstCellInRow", { rowIndx: rowIndx });
 
+                            resetProjectDetailForm();
                         }
 
                         }
@@ -1034,6 +853,7 @@
         // reload after....s
 
 
+
             $grid.pqGrid("showLoading");
 
             $.ajax({ url: "sProjects.php",
@@ -1088,175 +908,126 @@
 
         
 
-        $(document).on('click', '.showTCDetail',function(){
-        
-            var PID = $(this).attr('product_id');
-            $('#pid_detail_tc').attr('PID', PID);
-            
-
-            $("#popup")            
-
-                .dialog({
-
-                    height: 500,
-
-                    width: 800,
-
-                    //width: 'auto',
-
-                    modal: true,
-
-                    open: function (evt, ui) {   
-
-                        
-
-                    },
-
-                    close: function () {
-
-                         $grid.pqGrid("showLoading");
-
-                        $.ajax({ url: "sProjects.php",
-
-                            cache: false,
-
-                            async: true,
-
-                            dataType: "JSON",
-
-                            success: function (response) {
-
-                                var grid = $grid.pqGrid("getInstance").grid;
-
-                                grid.option("dataModel.data", response.data);
-
-
-
-
-
-                                var column = grid.getColumn({ dataIndx: "name" });
-
-                                var filter = column.filter;
-
-                                filter.cache = null;
-
-                                filter.options = grid.getData({ dataIndx: ["name"] });
-
-
-
-                                grid.refreshDataAndView();
-
-                                grid.hideLoading();
-
-                            }
-
-                        });
-
-                    },
-
-                    show: {
-
-                        effect: "blind",
-
-                        duration: 500
-
-                    }
-
-                }); 
-
-        });
-
-           
-
            
 
          $(document).on('click', '.showTimeline',function(){
-
-            var PID = $(this).attr('product_id');
-
-            
+            PID = $(this).attr('product_id');
             $('#popupTimeline iframe').attr('src', '/manager/admin/timeline.php?PID='+PID);
-
             $("#popupTimeline")            
-
                 .dialog({
-
                     height: 500,
-
-                    width: 800,
-
-                    //width: 'auto',
-
+                    width: 1200,
                     modal: true,
-
-                    open: function (evt, ui) {   
-
-                        
-
-                    },
-
-                    close: function () {
-
-                        
-
-                    },
-
+                    open: function (evt, ui) {   },
+                    close: function () {  },
                     show: {
-
                         effect: "blind",
-
                         duration: 500
-
                     }
-
                 }); 
-
         });  
 
 
-        $(document).on('click', '.showPictures',function(){
 
-            var PID = $(this).attr('product_id');
-
-            $('#popupPicture iframe').attr('src', '/manager/admin/picture.php?PID='+PID);
-
-            $("#popupPicture")            
-
+         $(document).on('click', '#btnShowThuChi',function(){
+            //PID = $(this).attr('product_id');
+            $('#popupThuChi iframe').attr('src', '/manager/admin/thuchi.php?PID='+PID);
+            $("#popupThuChi")            
                 .dialog({
-
                     height: 500,
-
-                    width: 800,
-
-                    //width: 'auto',
-
+                    width: 1200,
                     modal: true,
-
-                    open: function (evt, ui) {   
-
-                        
-
-                    },
-
-                    close: function () {
-
-                        
-
-                    },
-
+                    open: function (evt, ui) {   },
+                    close: function () {  },
                     show: {
-
                         effect: "blind",
-
                         duration: 500
-
                     }
-
                 }); 
-
         });  
 
 
+
+
+
+         function reloadProjectDetail(PID){
+            // reset form
+             $('#p-summary').val();
+           $('#p-summary-design').val();
+           $('#p-delivery').val();
+           $('#p-admin-note').val();
+           $('#project_pictures').html();
+           $('#tongthu, #tongchi, #loilo').html();
+
+
+                $.ajax({
+                        url: '/manager/admin/ajax.php',
+                        data: {
+                            action:'loadProjectDetail',
+                            PID:PID
+                        },
+                        async: false,
+                        success:function(response) {
+                            project =  JSON.parse(response);
+                            console.log(project);
+                            
+                            $('#p-summary').val(project.summary);
+                            $('#p-summary-design').val(project.summary_design);
+                            $('#p-delivery').val(project.delivery_note);
+                            $('#p-admin-note').val(project.admin_note);
+                            $('#project_pictures').html(project.pictures);
+                            $('#tongthu').html(formatNumber(project.sum_in));
+                            $('#tongchi').html(formatNumber(project.sum_out));
+                            $('#loilo').html(formatNumber(project.sum_in - project.sum_out));
+
+
+
+                            var action = '/manager/admin/picture_upload.php?PID='+PID;
+                            $('#frmUploadProjectPicture').attr('action', action);
+                        },
+                        error: function(xhr, ajaxOptions, thrownError){
+                            console.log(xhr);
+                            },
+
+                    }); 
+            }
+
+          function updateProjectDetail(PID){
+                $.ajax({
+                        url: '/manager/admin/ajax.php',
+                        data: {
+                            action:'updateProjectDetail',
+                            PID:PID,
+                            summary:$('#p-summary').val(),
+                            summary_design: $('#p-summary-design').val(),
+                            delivery_note: $('#p-delivery').val(),
+                            admin_note: $('#p-admin-note').val()
+                        },
+                        async: false,
+                        success:function(response) {
+                           console.log(response);
+                           $('#showResult').text(response);
+                        },
+                        error: function(xhr, ajaxOptions, thrownError){
+                            console.log(xhr);
+                        },
+
+                    }); 
+            }
+
+
+        // save a project
+        $('#btnUpdateProject').click(function(){
+            updateProjectDetail(PID);
+        });
+
+
+        function resetProjectDetailForm(){
+            $('#p-summary').val('');
+            $('#p-summary-design').val('');
+            $('#p-delivery').val('');
+            $('#p-admin-note').val('');
+        }
     });
 
   
@@ -1264,10 +1035,12 @@
 </script>    
 
 <div id="grid_php" style="margin:5px auto;"></div>
+<div id="project-detail"><?php require_once('project_detail.php');?></div>
+
 
 <div id="pid_detail_tc" PID="0"></div>
 
- <div title="Thu Chi" id="popup" style="overflow:hidden; display:none;">
+ <div title="Thu Chi" id="popupThuChi" style="overflow:hidden; display:none;">
 
      <iframe src="/manager/admin/thuchi.php" width="100%" height="100%"></iframe>
 
@@ -1280,14 +1053,6 @@
      <iframe src="/manager/admin/timeline.php" width="100%" height="100%"></iframe>
 
 </div>
-
-
-<div title="Pictures" id="popupPicture" style="overflow:hidden; display:none;">
-
-     <iframe src="/manager/admin/picture.php" width="100%" height="100%"></iframe>
-
-</div>
-
 
 </body>
 

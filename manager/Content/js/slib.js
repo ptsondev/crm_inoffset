@@ -246,6 +246,46 @@ jQuery(document).ready(function($){
         });              
 
     });
+
+
+    $('button.tlFinish').click(function(){
+        var pid = $('#PID').text();
+        var tid = $(this).parent().attr('tid');
+        var uid = $('select[tid='+tid+']').val();
+        var note = $('.item[tid='+tid+'] .text-full').val();
+        var task = $(this).attr('task');
+
+        $.ajax({
+
+            url: '/manager/admin/ajax.php',
+            data: {
+                action:'updateTimeLine2',
+                tid:tid,
+                uid:uid,
+                note:note,
+                pid:pid,
+                task:task
+            },
+
+            async: false,
+
+            success:function(response) {
+
+                //alert(response);        
+
+                var today = new Date();
+
+                var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+                $('#result').text('Update thành công! ' +time);
+                $('.tlFinish[tid='+tid+']').hide();
+
+                return false;
+            }
+
+        });   
+        return false;
+    });
     
     $(document).on('click', '.btn-finish-mobile',function(){
 
@@ -271,10 +311,9 @@ jQuery(document).ready(function($){
         });
 
     // remove picture
-    $('#project_pictures .rm_pic').click(function(){
+    $('body').on('click', '#project_pictures .rm_pic', function(e){
         var picture_id = $(this).attr('picture_id');
-
-
+      
              $.ajax({url: '/manager/admin/ajax.php',
 
                             async: false,
@@ -291,4 +330,26 @@ jQuery(document).ready(function($){
           $('#project_pictures .pic-'+picture_id).remove();     
     });
 
+
+    // search projects
+    $('#btnSearchProject').click(function(){
+            var pid = $('#txtSearchPID').val();
+            var name = $('#txtSearchName').val();
+            var phone = $('#txtSearchPhone').val();
+            var email = $('#txtSearchEmail').val();
+            $.ajax({url: '/manager/admin/ajax.php',
+                async: false,
+                data:{  
+                    action:'searchProject', 
+                    pid:pid,
+                    name:name,
+                    phone:phone,
+                    email:email
+                },
+                success: function (response) {                                
+                    //console.log(response);
+                    $('#searchProjectResult').html(response);
+                }
+            });
+    });
 });
