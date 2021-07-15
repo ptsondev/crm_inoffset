@@ -833,3 +833,17 @@ box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
     display: inline-block;
     width: 100px;
 }
+tr.pq-grid-oddRow > td{
+    background:#fff;
+}
+
+
+tr.pq-row-select td{
+    background:rgb(211, 225, 241) !important;    
+}
+tr.r-huy td{
+    background: pink;
+}
+tr.r-duyetin td{
+    background: #eaf9f1;
+}

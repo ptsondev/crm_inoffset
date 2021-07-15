@@ -256,41 +256,23 @@
                     var status = ui.cellData;
 
                     if(status==0){
-
-                         return '<div style="background:pink;">Hủy - Không Làm</div>';                        
-
+                         return '<div class="r-status" status="r-huy">Hủy - Không Làm</div>';                        
                     }else if(status==1){                        
-
-                        return 'Mới';            
-
+                        return '<div class="r-status" status="r-moi">Mới</div>';                                   
                     }else if(status==2){
-
-                        return 'Đã Báo Giá';
-
+                        return '<div class="r-status" status="r-dabaogia">Đã Báo Giá</div>';           
                     }else if(status==3){
-
-                        return 'Đã Ký';
-
+                        return '<div class="r-status" status="r-ky">Đã Ký</div>';     
                     }else if(status==4){
-
-                        return 'Đã Làm Xong';
-
+                        return '<div class="r-status" status="r-lamxong">Đã Làm Xong</div>';     
                     }else if(status==5){                        
-
-                        return 'Đã Giao Hàng - Chưa Thu Tiền';
-
+                        return '<div class="r-status" status="r-giaochuathu">Đã Giao Hàng Chưa Thu Tiền</div>';     
                     }else if(status==6){
-
-                        return '<div style="background:#84c428;">Đã Hoàn Thành</div>';                                                                             
-
+                        return '<div class="r-status" status="r-hoanthanh">Đã Hoàn Thành</div>';     
                     }else if(status==7){
-
-                        return '<div class="duyetin">Duyệt In</div>';                                                                             
-
+                        return '<div class="r-status" status="r-duyetin">Duyệt In</div>';                             
                     }else if(status==8){
-
-                        return '<div>Đã Giao Hàng - Đã Thu Tiền</div>';                                                                             
-
+                        return '<div class="r-status" status="r-giaothutien" >Đã Giao Hàng & Thu Tiền</div>';     
 					}
 
                 },
@@ -730,7 +712,7 @@
                 var ret = grid.isValid({ data: data, allowInvalid: false });       
 
                 
-
+                showcolorful();
                 
 
             },
@@ -752,7 +734,7 @@
                 });
 
                 
-
+                showcolorful();
                 
 
             },
@@ -1027,6 +1009,13 @@
             $('#p-summary-design').val('');
             $('#p-delivery').val('');
             $('#p-admin-note').val('');
+        }
+
+        function showcolorful(){
+            $('.r-status').each(function(e){
+                var status = $(this).attr('status');
+                $(this).parents('tr').addClass(status);              
+            });
         }
     });
 

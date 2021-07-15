@@ -66,13 +66,11 @@ function updateSingle($pdo, $r){
 
     /* Update theo data hiện tại */
 
-    $sql = 'UPDATE projects SET name=?,source=?,phone=?,email=?,deadline=?,status=?,price_out=?,steps=?,summary=?,summary_design=?, delivery_note=?, sum_out=?,sum_in=?,saleID=? WHERE PID=?';
+    $sql = 'UPDATE projects SET name=?,source=?,phone=?,email=?status=? WHERE PID=?';
 
     $stmt = $pdo->prepare($sql);
 
-    $result = $stmt->execute(array($r->name,$r->source,$r->phone,$r->email,$r->deadline,$r->status,$r->price_out,$r->steps,$r->summary,$r->summary_design,$r->delivery_note,
-
-                                   $r->sum_out,$r->sum_in, $r->saleID, $r->PID));
+    $result = $stmt->execute(array($r->name,$r->source,$r->phone,$r->email,$r->status,$r->PID));
 
  
 
