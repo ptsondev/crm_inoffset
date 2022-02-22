@@ -1,0 +1,222 @@
+html,body{
+}
+body {
+    font-size: 15px;
+    font-family:'UTM Avo';
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+.my-block{
+    padding: 15px;
+    border:1px solid #333;
+    border-radius: 10px;
+    box-shadow: 4px 3px 5px 0px rgba(90,88,88,0.75);
+    -webkit-box-shadow: 4px 3px 5px 0px rgba(90,88,88,0.75);
+    -moz-box-shadow: 4px 3px 5px 0px rgba(90,88,88,0.75);
+}
+h1{
+    font-size: 24px;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 20px;
+    color: #1eb1ee;
+}
+
+.frmProject #customer-block label,
+label.w100{
+    width: 100px;
+}
+.frmProject .my-block input,
+.frmProject .my-block select{
+    width: 200px;
+}
+
+.frmProject textarea{
+    width: 100%;
+}
+
+.frmProject  input[type=submit]{
+    margin-top: 15px;
+}
+
+div.pq-grid *{
+    font-size: 14px;
+}
+a{
+    color:#1eb1ee;
+}
+.btn-primary{
+    background: #1eb1ee;
+    border: none;
+}
+.pq-grid-table a{
+    color:#1eb1ee !important;
+    text-decoration: none;
+}
+
+.my-block{
+    position: relative;
+    margin:30px 0 10px;
+    padding: 30px 15px 15px;
+}
+.my-block .block-title{
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    background: #FFF;
+    padding: 0 10px;
+}
+
+#status-region{
+    border-bottom: 1px dashed #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+#project-tasks label{
+    width: 80px;
+}
+#project-tasks select{
+    width: 120px;
+}
+#project-tasks .process{
+    padding-bottom: 10px;
+    margin: 10px 0px;
+    border-bottom: 1px dashed #ccc;
+}
+#project-tasks .num{
+    margin-top: 5px;
+    background: #333;
+    border-radius: 30px;
+    padding: 5px 25px 5px 15px;
+    font-size: 20px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+}
+
+#project-tasks .process.finish .num{
+    background: green;
+}
+#project-tasks .process.ongoing .num{
+    background: orange;
+}
+
+#header{
+    background: #428bca;
+    color:#FFF;
+    padding: 2px 10px;
+}
+
+
+#header a{
+    color:#FFF;
+    text-decoration: none;    
+}
+#main-menu{
+    display: inline-block;
+    font-size: 18px;
+}
+#user-info{
+    display: inline-block;
+    float: right;
+    position: relative;
+}
+#main-menu li{
+    list-style: none;
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+}
+#user-notices{
+    position: fixed;
+    right: 0;
+    top: 51px;
+    background: #efefef;
+    color:#333;
+    padding: 10px;
+    width: 250px;
+    display: none;
+    z-index: 9999;
+}
+#user-notices a{
+    color:#1eb1ee;
+}
+
+#user-notices .item{
+    border-bottom: 1px #ccc dotted;
+    padding-bottom: 5px;
+}
+#user-notices .item.unread{
+    background: #ccc;
+}
+#notice-sound{
+    display: none;
+}
+
+.myTable .first-row th{
+    background: rgb(211, 225, 241);
+    color:#666;    
+}
+
+.myTable td,
+.myTable th{
+    border:1px solid #ccc;
+    padding: 5px 10px;
+}
+
+.myTable tr:nth-child(2n+1){
+    background: #efefef;
+}
+
+#tbTasks .note{
+    width: 300px;
+}
+.myTable tr.focus{
+    background: #1eb1ee;
+    color:#FFF;
+}
+.myTable tr.focus a{
+    color:#FFF;
+}
+
+#thuchi-result {
+    background: green;
+    border-radius: 8px;
+    padding: 10px;
+    color: #FFF;
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+#thuchi-result label {
+    width: 80px;
+}
+#thuchi-result .show-money {
+    text-align: right;
+    width: 120px;
+    display: inline-block;
+}
+#thuchi-block .col-title{
+    min-width: 150px;
+}
+#thuchi-block .col-pom{
+    min-width: 50px;
+}
+#thuchi-block input,
+#thuchi-block select{
+    width: 100%;
+}
+#feedback-area{
+    display: none;
+}
+#tbTasks .status{
+    width: 115px;
+}
+#tbTasks .work{
+    width: 115px;
+}

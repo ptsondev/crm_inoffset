@@ -1,0 +1,12 @@
+[15-Feb-2022 00:26:39 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/innhanhf/crmnew.inoffsethcm.com/public/mylib.php:17
+Stack trace:
+#0 /home/innhanhf/crmnew.inoffsethcm.com/public/mylib.php(17): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/innhanhf/crmnew.inoffsethcm.com/public/sProjects.php(6): getDBH()
+#2 {main}
+  thrown in /home/innhanhf/crmnew.inoffsethcm.com/public/mylib.php on line 17
+[15-Feb-2022 00:27:09 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/innhanhf/crmnew.inoffsethcm.com/public/mylib.php:17
+Stack trace:
+#0 /home/innhanhf/crmnew.inoffsethcm.com/public/mylib.php(17): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/innhanhf/crmnew.inoffsethcm.com/public/sProjects.php(6): getDBH()
+#2 {main}
+  thrown in /home/innhanhf/crmnew.inoffsethcm.com/public/mylib.php on line 17
