@@ -202,8 +202,9 @@
                 colModel: colM,
                 freezeCols: 2,
                 selectionModel: {
-                    type: 'row'
+                    type: 'cell'
                 },
+				
                 pageModel: {
                     type: "local",
                     rPP: 200,

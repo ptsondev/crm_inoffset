@@ -72,7 +72,7 @@ WHERE ID>? GROUP BY ID ORDER BY ID DESC";
 
     $stmt = $dbh->prepare($sql);
 
-    $stmt->execute(array($maxPID - 200));
+    $stmt->execute(array($maxPID - 500));
 
     $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
     $sb = "{\"data\":" . json_encode($projects) . "}";
